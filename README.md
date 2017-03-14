@@ -1,2 +1,4 @@
 # RepairPrecisionViewPager
 这个库修复了系统v4以及v7包里的ViewPager在超过float值的item之后，产生的滑动失灵的问题
+
+注：在做广告轮播图的时候经常会用到假无限循环（最大值为Integer.MAX_VALUE），然后设置默认值到中间来实现。这时候，系统自带的ViewPager会出现滑动不灵敏的问题。经过检查，是因为系统自带的Viewpager里面的大多数手势计算是通过float来进行的，而item值又是int类型。所以当item数量大于float的最大值时，就会出现如下的问题。解决的思路是直接将手势计算中的float值变换成double即可解决。
