@@ -1,0 +1,2 @@
+# RepairPrecisionViewPager
+这个库修复了系统v4以及v7包里的ViewPager在超过float值的item之后，产生的滑动失灵的问题
