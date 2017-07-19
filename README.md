@@ -1,4 +1,6 @@
 # RepairPrecisionViewPager
+[![](https://jitpack.io/v/HsXuTao/RepairViewPager.svg)](https://jitpack.io/#HsXuTao/RepairViewPager)
+
 在做广告轮播图的时候经常会用到假无限循环（最大值为Integer.MAX_VALUE），然后设置默认值到中间来实现。这时候，系统自带的ViewPager会出现滑动不灵敏的问题。
 该库就是修复了系统的ViewPager在大数据量的Itme时候滑动异常的问题。
 
